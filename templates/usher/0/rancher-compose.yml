@@ -1,7 +1,7 @@
 .catalog:
-  name: "Rubygems-Server"
+  name: "Usher-Security-Server"
   version: 0.0.1
-  description: "A rubygems server to host your private ruby gems"
+  description: "A Usher security suite server to host your own IDM"
   minimum_rancher_version: v0.63.0
   questions:
     - variable: "DATE"

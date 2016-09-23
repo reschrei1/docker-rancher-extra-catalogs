@@ -1,5 +1,5 @@
-rubygems:
-  image: spoonest/geminabox:latest
+usher:
+  image: reschrei/usher:latest
   environment:
     USERNAME: ${USER}
     PASSWORD: ${PASSWORD}
