@@ -1,0 +1,7 @@
+name: "Usher Security Suite"
+description: |
+  A Usher Security server to host your basic key4iot infrastructure
+version: 0.0.1
+category: Applications
+maintainer: "Rene Schreiber <rene.schreiber@t-systems.com>"
+projectURL: https://github.com/reschrei1/docker-rancher-extra-catalogs/tree/master/templates/rubygems-server
