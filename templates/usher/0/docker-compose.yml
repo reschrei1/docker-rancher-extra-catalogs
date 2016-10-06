@@ -14,6 +14,10 @@ usher:
     - 1443:443/tcp
     - 2443:1443/tcp
     - 9443:9443/tcp
+  labels:
+    # Host MUST have the label `key1=value1`
+    io.rancher.scheduler.affinity:host_label: name=rancherslave2
+    io.rancher.scheduler.affinity:host_label: name=rancherslave3
   tty: true
   stdin_open: true
   
