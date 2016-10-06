@@ -5,7 +5,10 @@ usher:
     PASSWORD: ${PASSWORD}
     PRIVATE: ${PRIVATE_ONLY}
   volumes:
-    - ${DATA}:/webapps/geminabox/data
+    - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    - /home/azureuser/certs:/certs
+    - /home/azureuser/usher/config:/usher/config
+    - /usher/downloads:/usher/downloads
   labels:
     io.rancher.container.create_agent: 'true'
     io.rancher.container.agent.role: 'environment'
