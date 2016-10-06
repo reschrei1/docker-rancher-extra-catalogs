@@ -10,6 +10,13 @@ usher:
     - /home/azureuser/certs:/certs
     - /home/azureuser/usher/config:/usher/config
     - /usher/downloads:/usher/downloads
+  ports:
+    - 5901:5901/tcp
+    - 8484:8080/tcp
+    - 9501:9501/tcp
+    - 1443:443/tcp
+    - 2443:1443/tcp
+    - 9443:9443/tcp
   tty: true
   stdin_open: true
   labels:
