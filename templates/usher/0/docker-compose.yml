@@ -20,4 +20,5 @@ usher:
     io.rancher.scheduler.affinity:host_label: instance=usher
   tty: true
   stdin_open: true
+  # command: bash -c "/opt/MicroStrategy/Usher/UsherServer/usherApps/shardIDM/bin/tomcat.sh restart;/opt/MicroStrategy/Usher/UsherServer/usherApps/shardGateway/bin/tomcat.sh restart"
   
