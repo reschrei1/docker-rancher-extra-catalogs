@@ -1,5 +1,5 @@
 usher:
-  image: reschrei/usher:latest
+  image: dregistry.pass4iot.de:5000/usher/usher:latest
   environment:
     USERNAME: ${USER}
     PASSWORD: ${PASSWORD}
