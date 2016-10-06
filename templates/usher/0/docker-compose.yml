@@ -21,7 +21,7 @@ usher:
   tty: true
   stdin_open: true
   # command: bash -c "/opt/MicroStrategy/Usher/UsherServer/usherApps/shardIDM/bin/tomcat.sh restart;/opt/MicroStrategy/Usher/UsherServer/usherApps/shardGateway/bin/tomcat.sh restart"
-  command: bash -c "./setup.sh -silent -debug -nocheck -log install.log -options /usher/config/usher_answer_file.txt"
+  command: bash -c "/usher/downloads/linux/extract/Installations/QueryReportingAnalysis_Linux/setup.sh -silent -debug -nocheck -log install.log -options /usher/config/usher_answer_file.txt"
   
   
   
