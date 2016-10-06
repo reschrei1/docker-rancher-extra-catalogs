@@ -1,14 +1,11 @@
 usher:
   image: dregistry.pass4iot.de:5000/usher/usher:latest
   restart: always
-  environment:
-    USERNAME: ${USER}
-    PASSWORD: ${PASSWORD}
-    PRIVATE: ${PRIVATE_ONLY}
+  privileged: true
   volumes:
     - /sys/fs/cgroup:/sys/fs/cgroup:ro
-    - /home/azureuser/certs:/certs
-    - /home/azureuser/usher/config:/usher/config
+    - ${USER_HOME}/certs:/certs
+    - ${USER_HOME}/usher/config:/usher/config
     - /usher/downloads:/usher/downloads
   ports:
     - 5901:5901/tcp
@@ -19,6 +16,4 @@ usher:
     - 9443:9443/tcp
   tty: true
   stdin_open: true
-  labels:
-    io.rancher.container.create_agent: 'true'
-    io.rancher.container.agent.role: 'environment'
+  
