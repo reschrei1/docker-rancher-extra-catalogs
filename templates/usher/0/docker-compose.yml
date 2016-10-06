@@ -9,6 +9,8 @@ usher:
     - /home/azureuser/certs:/certs
     - /home/azureuser/usher/config:/usher/config
     - /usher/downloads:/usher/downloads
+  tty: true
+  stdin_open: true
   labels:
     io.rancher.container.create_agent: 'true'
     io.rancher.container.agent.role: 'environment'
