@@ -9,4 +9,5 @@
       description: "Set the users home  directory"
       required: true
       type: "string"
-    
+  usher:
+    scale: 2    
