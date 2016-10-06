@@ -8,6 +8,7 @@
       label: "Set the users home directory"
       description: "Set the users home  directory"
       required: true
+      default: "/home/azureuser"
       type: "string"
 usher:
   scale: 2    
