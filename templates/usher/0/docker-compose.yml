@@ -1,5 +1,6 @@
 usher:
   image: dregistry.pass4iot.de:5000/usher/usher:latest
+  restart: always
   environment:
     USERNAME: ${USER}
     PASSWORD: ${PASSWORD}
