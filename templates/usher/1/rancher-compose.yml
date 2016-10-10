@@ -1,0 +1,14 @@
+.catalog:
+  name: "Usher-Security-Server"
+  version: 0.0.1
+  description: "A Usher security suite server to host your own IDM"
+  minimum_rancher_version: v0.63.0
+  questions:
+    - variable: "USER_HOME"
+      label: "Set the users home directory"
+      description: "Set the users home  directory"
+      required: true
+      default: "/home/azureuser"
+      type: "string"
+usher:
+  scale: 2    

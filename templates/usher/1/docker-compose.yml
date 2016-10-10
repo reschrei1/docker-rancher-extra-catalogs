@@ -17,7 +17,7 @@ usher:
   labels:
     # Host MUST have the label `key1=value1`
     io.rancher.scheduler.global: 'true'
-    io.rancher.scheduler.affinity:host_label: instance=cluster_usher_0
+    io.rancher.scheduler.affinity:host_label: instance=cluster_usher_1
   tty: true
   stdin_open: true
   # command: bash -c "/opt/MicroStrategy/Usher/UsherServer/usherApps/shardIDM/bin/tomcat.sh restart;/opt/MicroStrategy/Usher/UsherServer/usherApps/shardGateway/bin/tomcat.sh restart"
