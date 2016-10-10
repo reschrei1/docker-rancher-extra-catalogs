@@ -1,6 +1,6 @@
 .catalog:
   name: "Usher-Security-Server"
-  version: 0.0.1
+  version: 0.0.2
   description: "A Usher security suite server to host your own IDM"
   minimum_rancher_version: v0.63.0
   questions:
