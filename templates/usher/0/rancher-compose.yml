@@ -4,23 +4,11 @@
   description: "A Usher security suite server to host your own IDM"
   minimum_rancher_version: v0.63.0
   questions:
-    - variable: "DATE"
-      label: "Volume name or host path for the rubygem serverr storage"
-      description: "Where should the gems be stored"
+    - variable: "USER_HOME"
+      label: "Set the users home directory"
+      description: "Set the users home  directory"
       required: true
+      default: "/home/azureuser"
       type: "string"
-    - variable: "USER"
-      label: "Set a user to restrict upload/delete operations"
-      description: "Set a user to restrict upload/delete operations"
-      required: true
-      type: "string"
-    - variable: "PASSWORD"
-      label: "Set a password to restrict upload/delete operations"
-      description: "Set a password to restrict upload/delete operations"
-      required: true
-      type: "password"
-    - variable: "PRIVATE_ONLY"
-      label: "Private only"
-      description: "If checked, only users with the credentials given above can pull gems"
-      required: true
-      type: "boolean"
+usher:
+  scale: 2    
