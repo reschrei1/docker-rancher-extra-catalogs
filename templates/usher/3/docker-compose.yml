@@ -1,0 +1,28 @@
+usher:
+  image: dregistry.pass4iot.de:5000/usher/usher:latest
+  restart: always
+  privileged: true
+  volumes:
+    - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    - ${USER_HOME}/certs:/certs
+    - ${USER_HOME}/usher/config:/usher/config
+    - /usher/downloads:/usher/downloads
+  ports:
+    - 5901:5901/tcp
+    - 8484:8080/tcp
+    - 9501:9501/tcp
+    - 1443:443/tcp
+    - 2443:1443/tcp
+    - 9443:9443/tcp
+  labels:
+    # Host MUST have the label `key1=value1`
+    io.rancher.scheduler.global: 'true'
+    io.rancher.scheduler.affinity:host_label: cluster_instance=cluster_usher_3
+  tty: true
+  stdin_open: true
+  # command: bash -c "/opt/MicroStrategy/Usher/UsherServer/usherApps/shardIDM/bin/tomcat.sh restart;/opt/MicroStrategy/Usher/UsherServer/usherApps/shardGateway/bin/tomcat.sh restart"
+  # command: bash -c "sysctl -w vm.max_map_count=5242880;/usher/downloads/linux/extract/Installations/QueryReportingAnalysis_Linux/setup.sh -silent -nocheck -options /usher/config/usher_answer_file.txt"
+  
+  
+  
+  
