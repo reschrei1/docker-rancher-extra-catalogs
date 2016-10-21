@@ -10,5 +10,36 @@
       required: true
       default: "/home/azureuser"
       type: "string"
+    - variable: "USS1_PORT"
+      label: "Set the usher security server 1-way port"
+      description: "Set the usher security server 1-way port"
+      required: true
+      default: "1443"
+      type: "int"
+    - variable: "USS2_PORT"
+      label: "Set the usher security server 2-way port"
+      description: "Set the usher security server 2-way port"
+      required: true
+      default: "2443"
+      type: "int"
+    - variable: "UNM_PORT"
+      label: "Set the usher network manager port"
+      description: "Set the usher network manager port"
+      required: true
+      default: "9443"
+      type: "int"
+    - variable: "GATEWAY_PORT"
+      label: "Set the usher gateway server port"
+      description: "Set the usher gateway server port"
+      required: true
+      default: "9501"
+      type: "int"
+    - variable: "VNC_PORT"
+      label: "Set the vnc server default port"
+      description: "Set the vnc server default port"
+      required: true
+      default: "5901"
+      type: "int"
+         
 usher:
   scale: 2    
