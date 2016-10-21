@@ -8,8 +8,8 @@ usher:
     - ${USER_HOME}/usher/config:/usher/config
     - /usher/downloads:/usher/downloads
   ports:
-    - ${GATEWAY_PORT}:5901/tcp
-    - ${VNC_PORT}:9501/tcp
+    - ${VNC_PORT}:5901/tcp
+    - ${GATEWAY_PORT}:9501/tcp
     - ${USS1_PORT}:443/tcp
     - ${USS2_PORT}:1443/tcp
     - ${UNM_PORT}:9443/tcp
