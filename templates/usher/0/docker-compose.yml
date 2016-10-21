@@ -8,12 +8,11 @@ usher:
     - ${USER_HOME}/usher/config:/usher/config
     - /usher/downloads:/usher/downloads
   ports:
-    - 5901:5901/tcp
-    - 8484:8080/tcp
-    - 9501:9501/tcp
-    - 1443:443/tcp
-    - 2443:1443/tcp
-    - 9443:9443/tcp
+    - ${GATEWAY_PORT}:5901/tcp
+    - ${VNC_PORT}:9501/tcp
+    - ${USS1_PORT}:443/tcp
+    - ${USS2_PORT}:1443/tcp
+    - ${UNM_PORT}:9443/tcp
   labels:
     # Host MUST have the label `key1=value1`
     # io.rancher.scheduler.global: 'true'
