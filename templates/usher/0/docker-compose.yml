@@ -16,7 +16,7 @@ usher:
     - 9443:9443/tcp
   labels:
     # Host MUST have the label `key1=value1`
-    io.rancher.scheduler.global: 'true'
+    # io.rancher.scheduler.global: 'true'
     io.rancher.scheduler.affinity:host_label: cluster_instance=cluster_usher_0
   tty: true
   stdin_open: true
